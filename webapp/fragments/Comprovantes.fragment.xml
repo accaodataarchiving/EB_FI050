@@ -1,0 +1,29 @@
+<core:FragmentDefinition
+   xmlns="sap.m"
+   xmlns:core="sap.ui.core">
+   <Dialog
+      id="DownloadComprovantesDialog"
+      title ="{i18n>invoiceListTitle}">
+    <List
+        class="sapUiResponsiveMargin"
+        width="auto"
+        items="{ path: 'AnexosList>/Result' }"
+        id="listAnexos">
+        <items>
+        	<StandardListItem type="Active" title="{AnexosList>Nome}" description="{AnexosList>Iddoc}/{AnexosList>LoObjid}" 
+            navigated="{
+					parts: [
+						'settings>/navigatedItem',
+						'ProductId'
+					],
+					formatter: '.isNavigated'
+				}" press="onDownload"></StandardListItem>
+        </items>
+    </List>
+      <beginButton>
+         <Button
+            text="{i18n>dialogCloseButtonText}"
+            press=".onCloseDialog"/>
+      </beginButton>
+   </Dialog>
+</core:FragmentDefinition>

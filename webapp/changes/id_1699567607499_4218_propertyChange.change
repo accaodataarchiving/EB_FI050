@@ -1,0 +1,41 @@
+{
+    "fileName": "id_1699567607499_4218_propertyChange",
+    "fileType": "change",
+    "changeType": "propertyChange",
+    "moduleName": "",
+    "reference": "br.com.eldoradobrasil.fi050.fi050",
+    "packageName": "",
+    "content": {
+        "property": "showFilterConfiguration",
+        "newValue": false
+    },
+    "selector": {
+        "id": "br.com.eldoradobrasil.fi050.fi050::sap.suite.ui.generic.template.ListReport.view.ListReport::PartidasFornecedorSet--listReportFilter",
+        "idIsLocal": false,
+        "type": "sap.ui.comp.smartfilterbar.SmartFilterBar"
+    },
+    "layer": "CUSTOMER_BASE",
+    "texts": {},
+    "namespace": "apps/br.com.eldoradobrasil.fi050.fi050/changes/",
+    "projectId": "",
+    "creation": 1699567607499,
+    "originalLanguage": "",
+    "support": {
+        "generator": "changeUtils: SAPFioriTools",
+        "service": "",
+        "user": "",
+        "sapui5Version": "1.117.3",
+        "sourceChangeFileName": "",
+        "compositeCommand": ""
+    },
+    "oDataInformation": {},
+    "dependentSelector": {},
+    "validAppVersions": {
+        "from": "0.0.1",
+        "to": "0.0.1",
+        "creation": "0.0.1"
+    },
+    "jsOnly": false,
+    "variantReference": "",
+    "appDescriptorChange": false
+}

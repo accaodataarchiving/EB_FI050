@@ -1,0 +1,2 @@
+sap.ui.define(["sap/suite/ui/generic/template/lib/AppComponent"],function(e){"use strict";return e.extend("br.com.eldoradobrasil.fi050.fi050.Component",{metadata:{manifest:"json"}})});
+//# sourceMappingURL=Component.js.map
