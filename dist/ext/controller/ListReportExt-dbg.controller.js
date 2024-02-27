@@ -4,7 +4,7 @@ sap.ui.define([
     "sap/m/MessageToast"
 ],
 
-    function (Filter, MessageToast) {
+    function (Filter, MessageToast) { 
         'use strict';
 
         var that;
@@ -106,7 +106,10 @@ sap.ui.define([
             onInitSmartFilterBarExtension: function (oEvent) {
                 var userInfo;
                 userInfo = sap.ushell.Container.getService("UserInfo").getEmail();
-
+            
+                if(userInfo == null){
+                    userInfo = "felipe.goes@accao.com.br";
+                }
 
                 //Get SmartFilterBar 
                 var oGlobalFilter = oEvent.getSource();
@@ -143,6 +146,7 @@ sap.ui.define([
 
                 //In case you want to hide a Filter
                 oGlobalFilter.determineFilterItemByName("Dtvencimento").setVisibleInFilterBar(true);
+                oGlobalFilter.determineFilterItemByName("Status").setVisibleInFilterBar(true);
                 oGlobalFilter.determineFilterItemByName("PortalUser").setVisibleInFilterBar(false);
 
             },
@@ -155,6 +159,7 @@ sap.ui.define([
                 };
 
                 this.extensionAPI.setCustomMessage(oMessage);
+
                 /*
                 var oID = oEvent.getSource().getId();;
                 var smartTable = oEvent.getSource();

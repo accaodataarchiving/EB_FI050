@@ -97,7 +97,6 @@
                 "preload": true,
                 "settings": {
                     "defaultBindingMode": "TwoWay",
-                    "defaultCountMode": "Inline",
                     "refreshAfterChange": false,
                     "metadataUrlParams": {
                         "sap-value-list": "none"
@@ -168,7 +167,9 @@
                             "multiSelect": false,
                             "selectAll": false,
                             "growing":false,
-                            "growingScrollToLoad":false
+                            "growingScrollToLoad":false,
+                            "growingThreshold": false,
+                            "visibleRowCount": 100
                         },
                         "dataLoadSettings": {
                             "loadDataOnAppLaunch": "always"

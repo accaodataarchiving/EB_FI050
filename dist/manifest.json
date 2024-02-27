@@ -98,7 +98,6 @@
 				"preload": true,
 				"settings": {
 					"defaultBindingMode": "TwoWay",
-					"defaultCountMode": "Inline",
 					"refreshAfterChange": false,
 					"metadataUrlParams": {
 						"sap-value-list": "none"
@@ -159,6 +158,7 @@
 						"condensedTableLayout": true,
 						"smartVariantManagement": true,
 						"enableTableFilterInPageVariant": true,
+						"growingScrollToLoad": false,
 						"filterSettings": {
 							"dateSettings": {
 								"useDateRange": true
@@ -166,11 +166,16 @@
 						},
 						"tableSettings": {
 							"multiSelect": false,
-							"selectAll": true
+							"selectAll": false,
+							"growing": false,
+							"growingScrollToLoad": false,
+							"growingThreshold": false,
+							"visibleRowCount": 100
 						},
 						"dataLoadSettings": {
 							"loadDataOnAppLaunch": "always"
-						}
+						},
+						"defaultFilterMode": "visual"
 					}
 				}
 			}
