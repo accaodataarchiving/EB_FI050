@@ -38,6 +38,9 @@
                             <PropertyValue Property="Value" Path="Wrbtr" />
                         </Record>
                         <Record Type="UI.DataField">
+                            <PropertyValue Property="Value" Path="DmbtrBruto" />
+                        </Record>
+                        <Record Type="UI.DataField">
                             <PropertyValue Property="Value" Path="Waers" />
                         </Record>
                         <Record Type="UI.DataField">
