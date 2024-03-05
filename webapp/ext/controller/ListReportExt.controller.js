@@ -35,8 +35,7 @@ sap.ui.define([
                         entities += ",";
                     }
                     //entities += element.oModel.getData(element.sPath).entityname;
-                    chave = chave.concat(element.getProperty("Augbl"), element.getProperty("Bukrs"), element.getProperty("Gjahr"));
-                    //chave = element.getProperty("Chave");
+                    chave = chave.concat(element.getProperty("Belnr"), element.getProperty("Bukrs"), element.getProperty("Gjahr"));
                 }
 
                 //Buscar Documento - Exemplo = "170000096710002016"
