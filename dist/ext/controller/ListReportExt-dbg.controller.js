@@ -104,10 +104,20 @@ sap.ui.define([
 
             onInitSmartFilterBarExtension: function (oEvent) {
                 var userInfo;
+                var userLanguage;
                 userInfo = sap.ushell.Container.getService("UserInfo").getEmail();
+                userLanguage = sap.ui.getCore().getConfiguration().getLanguage();
             
                 if(userInfo == null){
                     userInfo = "felipe.goes@accao.com.br";
+                }
+
+                if(userLanguage == null){
+                    userInfo = "P";
+                }else if(userLanguage == "en"){
+                    userLanguage = "E";
+                }else{
+                    userLanguage = "P";
                 }
 
                 //Get SmartFilterBar 
@@ -137,6 +147,15 @@ sap.ui.define([
                             "value1": userInfo,
                             "value2": ""
                         }]
+                    },
+                    "Language": {
+                        "ranges": [{
+                            "exclude": false,
+                            "operation": "EQ",
+                            "keyField": "Language",
+                            "value1": userLanguage,
+                            "value2": ""
+                        }]
                     }
                 };
 
@@ -147,6 +166,7 @@ sap.ui.define([
                 oGlobalFilter.determineFilterItemByName("Dtvencimento").setVisibleInFilterBar(true);
                 oGlobalFilter.determineFilterItemByName("Status").setVisibleInFilterBar(true);
                 oGlobalFilter.determineFilterItemByName("PortalUser").setVisibleInFilterBar(false);
+                oGlobalFilter.determineFilterItemByName("Language").setVisibleInFilterBar(false);
 
             },
 
